@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the '愉快网1' target in the '愉快网1' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
