@@ -17,6 +17,11 @@ public:
 
     // implement the "static node()" method manually
     LAYER_NODE_FUNC(HelloWorld);
+    
+private:
+    cocos2d::CCSpriteBatchNode *_batchNode;
+    cocos2d::CCSprite   *_ship;//太空飞船
+    
 };
 
 #endif // __HELLOWORLD_SCENE_H__

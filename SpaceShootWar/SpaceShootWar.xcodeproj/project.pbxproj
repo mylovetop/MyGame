@@ -184,7 +184,6 @@
 		40E1906D15BE772D00CDF379 /* bg_planetsunrise.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E1905315BE772D00CDF379 /* bg_planetsunrise.png */; };
 		40E1906E15BE772D00CDF379 /* bg_spacialanomaly.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E1905415BE772D00CDF379 /* bg_spacialanomaly.png */; };
 		40E1906F15BE772D00CDF379 /* bg_spacialanomaly2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E1905515BE772D00CDF379 /* bg_spacialanomaly2.png */; };
-		40E1907015BE772D00CDF379 /* CCParallaxNode-Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E1905815BE772D00CDF379 /* CCParallaxNode-Extras.m */; };
 		40E1907115BE772D00CDF379 /* Arial.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 40E1905A15BE772D00CDF379 /* Arial.fnt */; };
 		40E1907215BE772D00CDF379 /* Arial.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E1905B15BE772D00CDF379 /* Arial.png */; };
 		40E1907315BE772D00CDF379 /* Stars1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40E1905D15BE772D00CDF379 /* Stars1.plist */; };
@@ -574,8 +573,6 @@
 		40E1905315BE772D00CDF379 /* bg_planetsunrise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_planetsunrise.png; sourceTree = "<group>"; };
 		40E1905415BE772D00CDF379 /* bg_spacialanomaly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_spacialanomaly.png; sourceTree = "<group>"; };
 		40E1905515BE772D00CDF379 /* bg_spacialanomaly2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_spacialanomaly2.png; sourceTree = "<group>"; };
-		40E1905715BE772D00CDF379 /* CCParallaxNode-Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCParallaxNode-Extras.h"; sourceTree = "<group>"; };
-		40E1905815BE772D00CDF379 /* CCParallaxNode-Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCParallaxNode-Extras.m"; sourceTree = "<group>"; };
 		40E1905A15BE772D00CDF379 /* Arial.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Arial.fnt; sourceTree = "<group>"; };
 		40E1905B15BE772D00CDF379 /* Arial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arial.png; sourceTree = "<group>"; };
 		40E1905D15BE772D00CDF379 /* Stars1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stars1.plist; sourceTree = "<group>"; };
@@ -1398,7 +1395,6 @@
 			isa = PBXGroup;
 			children = (
 				40E1905015BE772D00CDF379 /* Backgrounds */,
-				40E1905615BE772D00CDF379 /* Classes */,
 				40E1905915BE772D00CDF379 /* Fonts */,
 				40E1905C15BE772D00CDF379 /* Particles */,
 				40E1906015BE772D00CDF379 /* Sounds */,
@@ -1417,15 +1413,6 @@
 				40E1905515BE772D00CDF379 /* bg_spacialanomaly2.png */,
 			);
 			path = Backgrounds;
-			sourceTree = "<group>";
-		};
-		40E1905615BE772D00CDF379 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				40E1905715BE772D00CDF379 /* CCParallaxNode-Extras.h */,
-				40E1905815BE772D00CDF379 /* CCParallaxNode-Extras.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		40E1905915BE772D00CDF379 /* Fonts */ = {
@@ -1713,7 +1700,6 @@
 				40E1904115BE76F600CDF379 /* RootViewController.mm in Sources */,
 				40E1904515BE76F600CDF379 /* AppDelegate.cpp in Sources */,
 				40E1904815BE76F600CDF379 /* HelloWorldScene.cpp in Sources */,
-				40E1907015BE772D00CDF379 /* CCParallaxNode-Extras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1776,6 +1762,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1795,6 +1782,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SpaceShootWar/Prefix.pch;
@@ -1829,6 +1817,7 @@
 				40E1904D15BE76F700CDF379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
