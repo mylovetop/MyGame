@@ -77,10 +77,38 @@ bool HelloWorld::init()
     
     //获取窗口尺寸
     CCSize winSize = CCDirector::sharedDirector()->getWinSize();
-    
+    //加入太空飞船
     _ship = CCSprite::spriteWithSpriteFrameName("SpaceFlier_sm_1.png");
     _ship->setPosition(ccp(winSize.width*0.1, winSize.height*0.5));
     this->addChild(_ship,1);
+    
+    //加入背景
+    _backgroundNode = CCParallaxNode::node();
+    this->addChild(_backgroundNode, -1);
+    
+    _spacedust1 = CCSprite::spriteWithFile("bg_front_spacedust.png");
+    _spacedust2 = CCSprite::spriteWithFile("bg_front_spacedust.png");
+    _planetsunrise = CCSprite::spriteWithFile("bg_planetsunrise.png");
+    _galaxy = CCSprite::spriteWithFile("bg_galaxy.png");
+    _spacialanomaly = CCSprite::spriteWithFile("bg_spacialanomaly.png");
+    _spacialanomaly2 = CCSprite::spriteWithFile("bg_spacialanomaly2.png");
+    
+    //设置背景滚动速度
+    CCPoint dustSpeed = ccp(0.1, 0.1);
+    CCPoint bgSpeed = ccp(0.05, 0.05);
+    
+    
+    _backgroundNode->addChild(_spacedust1, 0, dustSpeed, ccp(0, winSize.height/2));
+    _backgroundNode->addChild(_spacedust2, 0, dustSpeed, ccp(_spacedust1->getContentSize().width, winSize.height/2));
+    _backgroundNode->addChild(_galaxy, -1, bgSpeed, ccp(0,winSize.height*0.7));
+    _backgroundNode->addChild(_planetsunrise, -1, bgSpeed, ccp(600, winSize.height*0.1));
+    _backgroundNode->addChild(_spacialanomaly, -1, bgSpeed, ccp(900, winSize.height*0.3));
+    _backgroundNode->addChild(_spacialanomaly2, -1, bgSpeed, ccp(1500, winSize.height*0.9));
+    
+    
+    
+    
+    
     
     return true;
 }

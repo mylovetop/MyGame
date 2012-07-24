@@ -3,6 +3,8 @@
 
 #include "cocos2d.h"
 
+USING_NS_CC;
+
 class HelloWorld : public cocos2d::CCLayer
 {
 public:
@@ -21,6 +23,15 @@ public:
 private:
     cocos2d::CCSpriteBatchNode *_batchNode;
     cocos2d::CCSprite   *_ship;//太空飞船
+    
+    CCParallaxNode *_backgroundNode;
+    CCSprite       *_spacedust1;
+    CCSprite       *_spacedust2;
+    CCSprite       *_planetsunrise;
+    CCSprite       *_galaxy;
+    CCSprite       *_spacialanomaly;
+    CCSprite       *_spacialanomaly2;
+    
     
 };
 
