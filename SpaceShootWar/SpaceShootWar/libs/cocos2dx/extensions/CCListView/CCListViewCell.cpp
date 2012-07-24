@@ -85,7 +85,7 @@ bool CCListViewCell::initWithColorWidthHeight(ccColor4B color, GLfloat width, GL
 
 void CCListViewCell::draw(void)
 {
-    CCLayerColor::draw();    
+    CCLayerColor::draw();
     CCSize size = this->getContentSize();
     CCListView *owner = this->getOwner();
     if (CCListViewCellSeparatorStyleSingleLine == m_nSeparatorStyle)
