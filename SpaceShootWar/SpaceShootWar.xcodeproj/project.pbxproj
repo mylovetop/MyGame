@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40A3951515BEA001000FE04A /* CCParallaxNodeExtras.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40A3951415BEA001000FE04A /* CCParallaxNodeExtras.cpp */; };
 		40E18E0015BE76F200CDF379 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E18DFF15BE76F200CDF379 /* QuartzCore.framework */; };
 		40E18E0215BE76F200CDF379 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E18E0115BE76F200CDF379 /* OpenGLES.framework */; };
 		40E18E0415BE76F200CDF379 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E18E0315BE76F200CDF379 /* OpenAL.framework */; };
@@ -201,6 +202,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40A3951215BE9F72000FE04A /* CCParallaxNodeExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCParallaxNodeExtras.h; sourceTree = "<group>"; };
+		40A3951415BEA001000FE04A /* CCParallaxNodeExtras.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCParallaxNodeExtras.cpp; sourceTree = "<group>"; };
 		40E18DFB15BE76F200CDF379 /* SpaceShootWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceShootWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E18DFF15BE76F200CDF379 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		40E18E0115BE76F200CDF379 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1378,6 +1381,8 @@
 				40E1904415BE76F600CDF379 /* AppDelegate.cpp */,
 				40E1904615BE76F600CDF379 /* HelloWorldScene.h */,
 				40E1904715BE76F600CDF379 /* HelloWorldScene.cpp */,
+				40A3951215BE9F72000FE04A /* CCParallaxNodeExtras.h */,
+				40A3951415BEA001000FE04A /* CCParallaxNodeExtras.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1700,6 +1705,7 @@
 				40E1904115BE76F600CDF379 /* RootViewController.mm in Sources */,
 				40E1904515BE76F600CDF379 /* AppDelegate.cpp in Sources */,
 				40E1904815BE76F600CDF379 /* HelloWorldScene.cpp in Sources */,
+				40A3951515BEA001000FE04A /* CCParallaxNodeExtras.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

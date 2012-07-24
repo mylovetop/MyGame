@@ -31,7 +31,7 @@ private:
     CCSprite       *_galaxy;
     CCSprite       *_spacialanomaly;
     CCSprite       *_spacialanomaly2;
-    
+    void    update(cocos2d::ccTime dt);
     
 };
 

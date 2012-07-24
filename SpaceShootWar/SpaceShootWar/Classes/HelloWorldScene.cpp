@@ -108,7 +108,7 @@ bool HelloWorld::init()
     
     
     
-    
+    this->scheduleUpdate();
     
     return true;
 }
@@ -120,4 +120,10 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     exit(0);
 #endif
+}
+
+void HelloWorld::update(cocos2d::ccTime dt)
+{
+    CCPoint backgroundScrollVert = ccp(-1000,0);
+    _backgroundNode->setPosition(ccpAdd(_backgroundNode->getPosition(), ccpMult(backgroundScrollVert, dt)));
 }
